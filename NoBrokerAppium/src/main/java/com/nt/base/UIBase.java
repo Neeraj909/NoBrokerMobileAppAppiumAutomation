@@ -49,23 +49,28 @@ public class UIBase {
 		return webDriverWait;
 	}
 
-	public static AndroidDriver<MobileElement> getAndroidDriver() {
+
+	public static AndroidDriver androidDriver;
+
+	public static AndroidDriver getAndroidDriver() {
 		return androidDriver;
 	}
 
-	public static void setAndroidDriver(AndroidDriver<MobileElement> androidDriver) {
+	public static void setAndroidDriver(AndroidDriver androidDriver) {
 		UIBase.androidDriver = androidDriver;
 	}
 
-	public static AndroidDriver<MobileElement> androidDriver;
-
-	public static AppiumDriver<MobileElement> appiumDriver;
-
-	public static AppiumDriver<MobileElement> getAppiumDriver() {
+	public static AppiumDriver getAppiumDriver() {
 		return appiumDriver;
 	}
 
-	public static void setAppiumDriver(AppiumDriver<MobileElement> appiumDriver) {
+
+
+	public static AppiumDriver appiumDriver;
+
+	
+
+	public static void setAppiumDriver(AppiumDriver appiumDriver) {
 		UIBase.appiumDriver = appiumDriver;
 	}
 
@@ -85,7 +90,7 @@ public class UIBase {
 		cap.setCapability("appActivity", CommonUtills.getEnv().getConfig().getEnvironment().getAppActivity());
 		// cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
 		URL url = new URL(CommonUtills.getEnv().getConfig().getEnvironment().getURL());
-		setAppiumDriver(new AppiumDriver<MobileElement>(url, cap));
+		setAppiumDriver(new AppiumDriver(url, cap));
 		cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
 		cap.setCapability("autoAcceptAlerts", true);
 		getAppiumDriver().context("NATIVE_APP");

@@ -13,7 +13,7 @@ import com.nt.actions.NoBrokerUIActions;
 import com.nt.repo.NoBokerRepo;
 import com.nt.utills.CommonUtills;
 
-public class nobrokerTest extends NoBokerRepo {
+public class noBrokerTest extends NoBokerRepo {
 	NoBrokerUIActions noBrokerUIactions;
 	@Parameters("env")
 	@BeforeSuite

@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" name="Nobroker(failed)">
     <classes>
-      <class name="com.nt.test.nobrokerTest">
+      <class name="com.nt.test.noBrokerTest">
         <methods>
+          <include name="m4"/>
+          <include name="m3"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
-          <include name="m3"/>
-          <include name="m4"/>
         </methods>
-      </class> <!-- com.nt.test.nobrokerTest -->
+      </class> <!-- com.nt.test.noBrokerTest -->
     </classes>
   </test> <!-- Nobroker(failed) -->
 </suite> <!-- Failed suite [Nobroker Test Automation Suite] -->

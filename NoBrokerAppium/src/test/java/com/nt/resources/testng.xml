@@ -7,7 +7,7 @@
 	<parameter name="env" value="Prod"/>
 	<test name="Nobroker">
 		<classes>
-			<class name="com.nt.test.nobrokerTest" />
+			<class name="com.nt.test.noBrokerTest" />
 		</classes>
 	</test>
 

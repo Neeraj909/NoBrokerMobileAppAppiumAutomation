@@ -1,5 +1,6 @@
 package com.nt.actions;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
@@ -12,14 +13,14 @@ public class NoBrokerUIActions extends NoBokerRepo {
 		String type[] = prefrence.split("&");
 		for (String s1 : type)
 			for (int i = 1; i <= 2; i++) 
-				for (MobileElement ele : selectPrefrence(i)) 
+				for (WebElement ele : selectPrefrence(i)) 
 					if (ele.getText().equals(s1)) 
 						ele.click();
 					
 
 	}
 	public void selectDropdownValues(String city ) {
-		for (MobileElement ele : dropDownCity()) {
+		for (WebElement ele : dropDownCity()) {
 			if (ele.getText().trim().contains(city.trim())) {
 				ele.click();
 				break;
