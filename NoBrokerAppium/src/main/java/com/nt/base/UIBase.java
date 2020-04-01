@@ -76,7 +76,7 @@ public class UIBase {
 
 	public static void setDesiredCapabilities() throws Exception {
 		
-			//startAppiumServer();
+			startAppiumServer();
 		
 		cap=new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME,

@@ -9,8 +9,11 @@
     <classes>
       <class name="com.nt.test.noBrokerTest">
         <methods>
+          <include name="m2"/>
           <include name="m4"/>
+          <include name="m1"/>
           <include name="m3"/>
+          <include name="packerMoverDesktop"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
         </methods>

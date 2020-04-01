@@ -36,24 +36,10 @@ public class noBrokerTest extends NoBokerRepo {
 		Object[][] arrayObject = CommonUtills.getTestData("Sheet1");
 		return arrayObject;
 	}
-	@Test
-	public void m1() {
-		System.out.println("dwws");
-	}
-	@Test
-	public void m2() {
-		System.out.println("dsxsxwws");
-	}
-	@Test
-	public void m3() {
-		int i=2/0;
-	}
-	@Test
-	public void m4() {
-		int i=2/0;
-	}
+	
 	@AfterSuite
 	public void afterSuite() {
+		getService().stop();
 		
 	}
 
