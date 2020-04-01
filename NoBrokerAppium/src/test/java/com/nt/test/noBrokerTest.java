@@ -39,6 +39,7 @@ public class noBrokerTest extends NoBokerRepo {
 	
 	@AfterSuite
 	public void afterSuite() {
+		getAppiumDriver().close();
 		getService().stop();
 		
 	}
