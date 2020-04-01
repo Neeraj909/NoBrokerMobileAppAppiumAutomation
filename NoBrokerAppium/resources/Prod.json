@@ -1,0 +1,14 @@
+{
+	"Config": {
+		"Environment": {
+			"deviceName": "Realme 2 Pro",
+			"udid":"emulator-5554",
+			"platformName": "Android",
+			"platformVersion": "9.0.0",
+			"appPackage": "com.nobroker.app",
+			"automationName": "UIAutomator2",
+			"appActivity": "com.nobroker.app.activities.NBSplashScreen",
+			"URL": "http://127.0.0.1:4723/wd/hub"
+		}
+	}
+}
