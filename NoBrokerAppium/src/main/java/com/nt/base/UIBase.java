@@ -50,6 +50,7 @@ public class UIBase {
 	}
 
 
+	@SuppressWarnings("rawtypes")
 	public static AndroidDriver androidDriver;
 
 	public static AndroidDriver getAndroidDriver() {
